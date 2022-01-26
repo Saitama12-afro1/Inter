@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title%}
+
+{%endblock%}
+
+{% block body%}
+<div class="container mt-5">
+    <h1>{{article.title}}</h1>
+    <div class="alert alert-info">
+      <p>{{article.text}}</p>
+        <a href ='/poste/{{article.id}}/upd'class = 'btn btn-success'>Редактировать</a>
+    </div>
+</div>
+{%endblock%}

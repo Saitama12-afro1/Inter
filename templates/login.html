@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title%}
+
+{%endblock%}
+
+{%block body%}
+<div class="container mt-5">
+    <h1 class ='reg_h1'> Войти </h1>
+    <form  class = 's'method="post" required>
+        {{form.hidden_tag()}}
+        {{form.username}}<br>
+        {{form.mail}}<br>
+        {{form.password}}<br>
+        {{form.submit}}<br>
+        <br><a type="submit" class="btn btn-primary"  href = '/reg'>Нет аккаунта</a><br>
+    </form>
+</div>
+{%endblock%}
